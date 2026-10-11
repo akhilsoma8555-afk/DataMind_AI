@@ -3,8 +3,8 @@ import re
 import pandas as pd
 from typing import Any, Dict, List, Optional
 from fastapi import HTTPException
-from app.models import NLQueryResponse, AnalyticsRequest, FilterItem
-from app.analytics import execute_analytics
+from .models import NLQueryResponse, AnalyticsRequest, FilterItem
+from .analytics import execute_analytics
 
 ID_COLUMN_PATTERNS = [r'id$', r'_id$', r'order_id', r'row_id', r'postal_code', r'zip']
 
