@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from typing import List, Dict, Any, Optional
 from sklearn.ensemble import IsolationForest
-from app.models import AnomalyItem, AnomalyReport
+from .models import AnomalyItem, AnomalyReport
 
 ID_PATTERNS = ['id', 'postal', 'zip', 'code', 'phone', 'ssn']
 
