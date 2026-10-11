@@ -1,8 +1,8 @@
 import pytest
 import pandas as pd
-from app.nl_processor import process_nl_query
-from app.analytics import execute_analytics
-from app.models import AnalyticsRequest
+from .nl_processor import process_nl_query
+from .analytics import execute_analytics
+from .models import AnalyticsRequest
 
 @pytest.fixture
 def superstore_df():
