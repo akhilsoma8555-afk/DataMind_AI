@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from typing import Dict, Any, Optional, List
 from fastapi import HTTPException
-from app.models import AnalyticsRequest, AnalyticsResponse
+from .models import AnalyticsRequest, AnalyticsResponse
 
 def execute_analytics(df: pd.DataFrame, request: AnalyticsRequest) -> AnalyticsResponse:
     op = (request.operation or "").lower().strip()
