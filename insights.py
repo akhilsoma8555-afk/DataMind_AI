@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 from typing import List, Any, Dict
-from app.models import (
+from models import (
     ComprehensiveInsightsResponse,
     DatasetOverview,
     KPIItem,
