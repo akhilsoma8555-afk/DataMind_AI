@@ -1,9 +1,9 @@
 import pytest
 import pandas as pd
-from app.nl_processor import process_nl_query
-from app.insights import generate_insights
-from app.analytics import execute_analytics
-from app.models import AnalyticsRequest
+from .nl_processor import process_nl_query
+from .insights import generate_insights
+from .analytics import execute_analytics
+from .models import AnalyticsRequest
 
 TRAIN_PATH = r"C:\Users\ASUS\Downloads\train.csv\train.csv"
 
