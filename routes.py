@@ -9,24 +9,24 @@ import io
 from typing import List
 from google import genai
 
-from app.models import (
+from models import (
     UploadResponse, AnalyticsRequest, AnalyticsResponse,
     NLQueryResponse, ChartRequest, InsightsRequest, InsightsResponse, ExportRequest,
     ContextualNLQueryRequest, AnomalyReport, DataQualityReport, CleanDataRequest,
     DatasetListResponse, DatasetSummary, SetActiveDatasetRequest
 )
-from app.data_manager import (
+from data_manager import (
     save_upload, get_dataframe, get_raw_dataframe, get_sample_data,
     get_active_dataset, set_active_dataset, list_datasets,
     update_dataframe, generate_suggested_questions
 )
-from app.analytics import execute_analytics
-from app.nl_processor import process_nl_query
-from app.charts import generate_chart
-from app.insights import generate_insights
-from app.anomaly_detector import detect_anomalies
-from app.data_quality import assess_data_quality, clean_dataframe
-from app.pdf_exporter import generate_pdf_report
+from analytics import execute_analytics
+from nl_processor import process_nl_query
+from charts import generate_chart
+from insights import generate_insights
+from anomaly_detector import detect_anomalies
+from data_quality import assess_data_quality, clean_dataframe
+from pdf_exporter import generate_pdf_report
 
 router = APIRouter()
 
