@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from typing import Dict, List, Any, Tuple
-from app.models import DataQualityReport, ColumnQuality, QualityIssue, CleanDataRequest
+from models import DataQualityReport, ColumnQuality, QualityIssue, CleanDataRequest
 
 def assess_data_quality(df: pd.DataFrame) -> DataQualityReport:
     """
