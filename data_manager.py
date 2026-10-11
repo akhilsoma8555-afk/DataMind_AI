@@ -4,7 +4,7 @@ import random
 from datetime import datetime, timedelta
 from fastapi import HTTPException, UploadFile
 from typing import Dict, List, Optional
-from app.models import UploadResponse, ColumnInfo
+from models import UploadResponse, ColumnInfo
 
 _cache: Dict[str, pd.DataFrame] = {}
 _raw_cache: Dict[str, pd.DataFrame] = {}
